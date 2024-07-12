@@ -1,0 +1,165 @@
+body {
+  background-color: rgb(242, 249, 247);
+}
+
+.BIG-DIV{
+  background-color: white;
+  border-color: yellow;
+  border-style: solid;
+  border-width: 10px;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 36px;
+  background-color: rgb(131, 177, 250);
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.img-logo {
+  max-width: 200px;
+}
+
+.option {
+  height: 30px;
+  cursor: pointer;
+}
+
+.IMG {
+  position: relative;
+}
+
+.img {
+  width: 100%;
+}
+
+.discount {
+  height: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: Arial;
+  font-size: 900;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: rgb(131, 177, 250);
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.name-price{
+  padding-left: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.price {
+font-size: 17px;
+font-weight: bold;
+font-family: arial;
+}
+
+.order-now {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: green;
+    margin-bottom: 10px;
+    border-style: solid;
+    align-self: center;
+    cursor: pointer;
+}
+
+.order-now:active {
+   opacity: 0.7;
+   height: 49px;
+   width: 198px;
+}
+
+.BIGGEST-GRID{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40PX;
+  align-items: center;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.btn-con {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .BIGGEST-GRID {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .BIGGEST-GRID {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .BIGGEST-GRID {
+    grid-template-columns: 1fr;
+  }
+  .name {
+    font-size: 50px;
+  }
+  .price {
+    font-size: 35px;
+  }
+  .order-now {
+    height: 80px;
+    width: 300px;
+    font-size: 40px;
+  }
+  .order-now:active {
+    height: 79px;
+    width: 298px;
+  }
+  .header {
+    height: 70px;
+    padding: 20px 40px;
+  }
+  .img-logo {
+    max-width: 280px;
+  }
+  .option {
+    height: 80px;
+  }
+  .discount {
+    height: 40px;
+    padding-left:   20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
